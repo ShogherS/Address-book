@@ -83,7 +83,9 @@ void edit(){
 }
 
 void search(){
-      std::cout << "Serach the element" <<std::endl;
+    std::string name;
+    std::cout << "Serach the element" <<std::endl;
+     std::cout << "Serach the element" <<std::endl;
      std::cin >> name;
      bool found  = false;
      for(auto*& elem : addressBook) {
