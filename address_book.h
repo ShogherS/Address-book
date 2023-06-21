@@ -83,7 +83,19 @@ void edit(){
 }
 
 void search(){
- 
+      std::cout << "Serach the element" <<std::endl;
+     std::cin >> name;
+     bool found  = false;
+     for(auto*& elem : addressBook) {
+         if(elem->fname == name) {
+                 found = true;
+             }
+         }
+         if ( found) {
+              std::cout << "The contact was found" << std::endl;
+          } else {
+              std::cout <<"The contact was not found" << std::endl;
+      }
 }    
 void print(){
     std::cout << "_____________Address Book____________"<< std::endl;
